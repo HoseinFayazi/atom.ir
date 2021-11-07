@@ -1,0 +1,60 @@
+footer {
+    background-color: rgb(12 12 12);
+}
+
+p.about-site,footer form {
+    font-size: 14px;
+    line-height: 200%;
+    margin: 20px auto;
+    width: 85%;    
+    border-right: 2px solid #6c757d;
+    padding-right: 10px;
+}
+
+footer form input,footer form button {
+    font-size: 14px !important;
+}
+
+.line-top-footer {
+    height: 5px;
+    background-color: green;
+    width: 100%;
+    border-bottom: 1px solid rgb(0, 59, 0);
+}
+
+.line-box-top-footer {
+    background-color: rgb(8, 27, 6);
+    height: 40px;
+}
+
+.dastresi-box,.socialmedia-box {
+    padding: 14px;
+    padding-right: 50px;
+    font-size: 14px;
+}
+
+.dastresi-box ul {
+    padding-right: 10px;
+    line-height: 200%;
+}
+
+.dastresi-box ul li {
+    display: inline-block;
+}
+
+.copyright {
+    font-size: 14px;
+    background-color: rgb(8, 27, 6);
+    padding-top: 15px;
+    padding-right: 10px;
+    border-top: 2px solid rgb(12 12 12);
+}
+
+.copyright a {
+    color: green;
+}
+
+.footer-box2  {
+    background: #131313;
+    padding-top: 10px;
+}

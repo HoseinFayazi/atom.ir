@@ -1,0 +1,594 @@
+
+
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه قالب های وب</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="loader">
+        <div class="spinner-grow text-warning" style="width: 3rem; height: 3rem;" role="status">
+        </div>
+    </div>
+    <header>
+        <div class="header container-fluid">
+            <div class="header-menu row">
+                <div class="hac col-sm-8 col-4">
+                    <div class="hac-links">
+                        <a href="javascript:void(0)"><i class="fas fa-home m-1"></i>خانه</a>
+                        <a href="javascript:void(0)"><i class="fas fa-pen m-1"></i>درباره ما</a>
+                        <a href="javascript:void(0)"><i class="fas fa-phone m-1"></i>تماس با ما</a>
+                    </div>
+                    <div class="top-arrow">
+                        <button>
+                            <span style="animation-delay: 0;"></span>
+                            <span style="animation-delay: 0.2s;"></span>
+                            <span style="animation-delay: 0.4s;"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="icons col-sm-4 col-8 dir-left p-2">
+                    <span class="profil-icon">
+                        <i style="font-size: 22px;" class="fas fa-user-circle text-light user-login-signin"></i>
+                    </span>
+                    <span class="search-icon">
+                        <i style="font-size: 22px;" class="fas fa-search text-light"></i>
+                    </span>
+                    <span class="basket-icon">
+                        <i style="font-size: 22px;" class="fas fa-shopping-cart text-light"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="container-fluid text-center">
+                    <h1 class="mt-5 text-light p-5">با <span style="color:green"><strong>اتم</strong></span> قالب بخر و قالب بفروش</h1>
+                    <h5 class="text-light w-75 mx-auto">
+                        اتم بستری برای خرید و فروش انواع قالب های وردپرسی و اچ تی ام الی می باشد
+                        در اتم قالب های محبوب خود را انتخاب کنید و دانلود کنید،<br>
+                        قالب های خود را به فروش برسانید و به آسانی کسب درآمد کنید...
+                    </h5>
+                    <div>
+                        <button class="letsgo-btn"><a class="d-block w-100 h-100" id="letsgo" href="#main">بزن بریم</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-end">
+            </div>
+        </div>
+        <!------------------------------------------
+            start user login signin box
+        ------------------------------------------->
+        <div id="login-signin">
+            <div id="login-signin-close">
+                <button>
+                    <span style='font-size:30px;'>&#10005;</span>
+                </button>
+            </div>
+            <div id="login-signin-main">
+                <div class="login-signin-top-btn-box row">
+                    <div class="col-6 text-center">
+                        <button id="login-pointer-btn" class="active">
+                            ورود 
+                        </button>
+                    </div>
+                    <div class="col-6 text-center">
+                        <button id="signin-pointer-btn">
+                            ثبت نام
+                        </button>
+                    </div>
+                </div>
+                <!--login form-->
+                <form id="login-frm" method="post" action="">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">ایمیل</label>
+                      <input type="text" name="frm[email]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" oninvalid="this.setCustomValidity('لطفا از ایمیل معتبر استفاده کنید')" placeholder="لطفا ایمیل خود را وارد کنید">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">گذرواژه</label>
+                      <input type="password" name="frm[password]" class="form-control" id="exampleInputPassword1" placeholder="لطفا گذرواژه خود را وارد کنید">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" name="frm[rem]" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1"><small>مرا به خاطر بسپار</small></label>
+                    </div>
+                    <br>
+                    <button type="submit" name="login-btn" class="btn btn-primary">ورود</button>
+                  </form>
+                  <!--signin form-->
+                  <form id="signin-frm" method="post" action="">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">نام</label>
+                        <input type="text" name="frm[name]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="لطفا نام خود را وارد کنید">
+                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">ایمیل</label>
+                      <input type="text" name="frm[email]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" oninvalid="this.setCustomValidity('لطفا از ایمیل معتبر استفاده کنید')" placeholder="لطفا ایمیل خود را وارد کنید">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">گذرواژه</label>
+                      <input type="password" name="frm[password]" class="form-control" id="exampleInputPassword1" placeholder="لطفا گذرواژه انتخابی را وارد کنید">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">تایید گذرواژه</label>
+                      <input type="password" name="frm[repassword]" class="form-control" id="exampleInputPassword1" placeholder="لطفا گذرواژه را مجددا وارد کنید">
+                    </div>
+                    <br>
+                    <button type="submit" name="signin-btn" class="btn btn-primary">ثبت نام</button>
+                  </form>
+            </div>
+        </div><!--///////end user login signin box--> 
+    </header>
+    <nav>
+        <button class="navbar-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li class="menu-item">
+                <a href="detail.html">
+                    <span> قالب html </span>
+                    <span class="plus-icon"><i></i><i></i></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0)">
+                    <span> قالب وردپرس </span>
+                    <span class="plus-icon"><i></i><i></i></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0)">
+                    <span> قالب فروشگاهی </span>
+                    <span class="plus-icon"><i></i><i></i></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0)">
+                    <span> قالب شرکتی </span>
+                    <span class="plus-icon"><i></i><i></i></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0)">
+                    <span> قالب چند منظوره </span>
+                    <span class="plus-icon"><i></i><i></i></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                    <li class="sub-menu-item"><a href="javascript:void(0)">منو</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main id="main">
+        <!-----------------------------------
+            start most sales box
+        ------------------------------------>
+        <div class="most-sales container">
+            <h2 class="mb-4 text-center text-success border-success border p-3 rounded">آخرین قالب ها</h2>
+            <div class="row">
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/header-bg1.jpg">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/banner-bg.png">
+                        <div>
+                            <h3><a href="">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/1.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/2.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/2.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/6.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/5.jpg">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/3.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/1.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/3.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/4.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/5.jpg">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/6.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end most sales box-->
+
+        <!--start most viewed box-->
+        <div class="most-sales container">
+            <h2 class="mb-4 text-center text-success border-success border p-3 rounded">پر بازدید ترین ها</h2>
+            <div class="row most-sales-row dir-left">
+                <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/header-bg1.jpg">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/banner-bg.png">
+                        <div>
+                            <h3><a href="">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/1.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/2.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/2.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="most-sales-item col-md-3 col-sm-4 dir-right">
+                    <div class="most-sales-item-cont">
+                        <img src="img/theme-img/6.png">
+                        <div>
+                            <h3><a href="#">قالب شرکتی</a></h3>
+                            <p>
+                                <span><i class="fas fa-edit"></i></span>
+                                <span><small>9:45،5 مرداد 1400</small></span>
+                            </p>
+                            <p>
+                                <span><i class="fas fa-eye"></i></span>
+                                <span><small>200 بازدید</small></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--end most viewes box-->
+    </main>
+    <br><br>
+    <footer>
+        <div class="container-fluid text-muted p-0">
+            <div class="line-top-footer"></div>
+            <div class="line-box-top-footer"></div>
+            <div class="footer-box1 row">
+                <div class="col-md-6">
+                    <p class="about-site">    
+                    اتم یک بستر برای به اشتراگ گذاری و دانلود انواع قالب های سطح وب می باشد،<br>
+                    شما کاربران عزیز می توانید با استفاده از این بستر قالب های مورد نیاز خود را 
+                    دریافت کنید یا قالب های خود را به فروش برسانید،<br>
+                    اتم کار خود را از سال 1400 آغاز کرده و با هدف ارائه قالب های با کیفیت بالا و اقتصادی
+                    می باشد 
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <p>عضویت در خبرنامه<small>(جهت عضویت در خبرنامه ایمیل خود را وارد کنید)</small></p>
+                        <input class="form-control" type="email" placeholder="ایمیل خود را وارد کنید">
+                        <button type="submit" class="btn btn-outline-success mt-2">ارسال  ایمیل</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="footer-box2 row">
+                <div class="col-sm-4">
+                    <div class="dastresi-box">
+                        <h6>دسترسی صفحات سایت</h6>
+                        <ul>
+                            <li>صفحه اصلی</li><span class="mx-1">|</span>
+                            <li>درباره ما</li><span class="mx-1">|</span>
+                            <li>تماس با ما</li><span class="mx-1">|</span>
+                            <li>قوانین سایت</li><span class="mx-1">|</span>
+                            <li>راهنمای خرید</li><span class="mx-1">|</span>
+                            <li>کسب درامد</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="socialmedia-box">
+                        <h6>ما را در شبکه های اجتماعی پیدا کنید</h6>
+                        <a href="#"><img src="img/icons/instagram.png" alt="themato instagram" class="bg-light rounded-circle" width="30" height="30"></a>
+                        <a href="#"><img src="img/icons/telegram.png" alt="themato instagram" class="bg-light rounded-circle" width="30" height="30"></a>
+                    </div>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row copyright">
+                <p>کلیه حقوق این سایت محفوض می باشد.|طراحی و توسعه:<a href="http://hoseinfayazi.ir">hoseinfayazi.ir</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>

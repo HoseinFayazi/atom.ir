@@ -1,0 +1,235 @@
+header {
+    height: 100vh;
+    background-image: url("../img/single_service_04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    height: 100%;
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.842),rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.308));
+}
+
+.header-menu {
+    height: 10%;
+}
+
+.top-arrow {
+    display: none;
+}
+
+/*.header-menu div {
+}*/
+
+.hac-links a {
+    color: white;
+    font-size: 75%;
+    display: inline-block;
+    padding: 15px 7px 8px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.hac-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 1px #79ab2e;
+    transition: 0.5s all;
+}
+
+.header>div a:hover::after {
+    width: 100%;
+}
+
+.header-mid {
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+.header-mid h5 {
+    line-height: 220%;
+}
+
+.header-end {
+    height: 10%;
+}
+
+.icons span {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    margin-left: 1px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.icons span:hover {
+    transform: scale(1.2);
+}
+
+.letsgo-btn {
+    background-color: green;
+    color: white;
+    border: 0;
+    outline: none;
+    margin-top: 10px;
+    animation-name: letsgo;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.letsgo-btn a#letsgo {
+    padding: 12px 25px;
+}
+
+@keyframes letsgo {
+    from {
+        outline: 1px solid green;
+    }
+    to {
+        outline: 15px solid transparent;
+    }
+}
+
+/*----------------------------------------------------
+                    tooltip style
+-----------------------------------------------------*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+/*<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+*/
+
+
+
+
+@media only screen and (max-width: 800px) {
+    header,.header,.header-menu,.header-mid,.header-end {
+        height: auto;
+    }
+    .header {
+        padding-bottom: 30px;
+    }
+    .header-mid h1 {   
+      font-size: 20px;
+      padding: 0 !important;
+      margin-top: 80px !important;
+    }
+    .header-mid h5 {
+        font-size: 14px;
+        padding: 22px 4px !important;
+        width: 90% !important;
+    }
+    .header-mid button {
+        font-size: 13px;
+    }
+  }
+
+
+  @media only screen and (max-width: 576px) {
+    .header-menu .hac-links {
+        display: none;
+    }
+    .top-arrow {
+        display: block;
+        text-align: center;
+    }
+    .top-arrow button {
+        width: 30px;
+        height: 50px;
+        background-color: white;
+        border: 0;
+        outline: 0;
+        border-radius: 0 0 15px 15px;
+        transition: 0.5s all;
+    }
+    .top-arrow button span {
+        display: block;
+        width: 8px;
+        height: 8px;
+        transform: rotate(-45deg);
+        margin: auto;
+        border-bottom: 1px solid rgb(170, 170, 170);
+        border-left: 1px solid rgb(170, 170, 170);
+        animation-name: toparrowanimate;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: jump-end;
+        border-radius: 1px;
+    }
+  }
+
+  @keyframes toparrowanimate
+  {
+      from {
+          margin-top: -2pxpx;
+      }   
+      to {
+          margin-top: 3px;
+      }
+  }
+
+.hac-links-open {
+    background-color: white;
+    width: 100% !important;
+}
+
+.hac-links-open a {
+    color: rgb(151, 150, 150) !important;
+}
+
+
+
+
+
+
+
+
+

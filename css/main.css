@@ -1,0 +1,147 @@
+.most-sales {
+    margin-top: 60px;
+}
+
+.most-sales-item-cont {
+    height: 200px;
+    position: relative;
+    margin-bottom: 25px;
+    border: 2px solid rgb(24, 22, 22);
+    outline: 2px solid rgb(17, 16, 16);
+}
+
+@media only screen and (max-width: 576px) {
+    .most-sales-item-cont {
+        height: 320px;
+    }
+}
+
+.most-sales-item-cont img,.most-sales-item-cont div {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.most-sales-item-cont div {
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.973),rgba(0, 0, 0, 0.219));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 12px;
+}
+
+.most-sales-item-cont div h3 a {
+    color: rgb(68, 226, 53);
+}
+
+.most-sales-item-cont div p {
+    padding-right: 10px;
+}
+
+.most-sales-item-cont div span {
+    color: rgb(199, 199, 199);
+}
+
+.most-sales-item-cont div span i {
+    color: rgb(46, 202, 31);
+}
+
+.most-sales-item-cont div span small {
+    font-size: 11px;
+}
+
+
+
+
+
+
+/*==============================================================
+            style for detail.html page
+===============================================================*/
+#main-detail {
+    font-size: 90%;
+}
+
+#main-detail  p {
+    line-height: 200%;
+}
+
+/* .theme-main-img>div:first-of-type {
+    background-image: url("../img/bg-gallery.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.theme-main-img img {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.theme-info-main  {
+    border-radius: 0.25rem 0 0.25rem 0.25rem !important;
+}
+
+.theme-infos-option {
+    display: none;
+}
+
+.theme-infos-comment {
+    display: none;
+}
+
+.theme-site-map li {
+    display: inline-block;
+    color: rgb(212, 212, 212);
+}
+
+.theme-site-map li a {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.theme-site-map span {
+    color: rgb(94, 92, 92) !important;
+}
+
+.img-theme-author {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    border: 3px solid rgb(26, 25, 25);
+    margin: auto;
+}
+
+.theme-gallery-imgs img {
+    height: 100px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.418);
+}
+
+.bg-blackblue {
+    background-color: rgb(7, 0, 10);
+}
+
+.theme-info-btn  {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgb(28, 0, 131);
+    font-size: 13px;
+    color: rgb(176, 168, 211);
+    border: 2px solid #0b00a1;
+    box-shadow: inset 0 0 5px 4px #0b00a1;
+}
+
+.theme-infos-topbtn .active {
+    background-color: blue;
+}
+
+.theme-infos-topbtn a:hover {
+    color: rgb(173, 173, 173);
+}
